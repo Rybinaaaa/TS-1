@@ -1,0 +1,5 @@
+Ulice -- String;
+Cislo -- number;
+Mesto -- String; BP: Mesto musi byt na vyber s existujicich v nase databaze
+PSC -- Number;
+
