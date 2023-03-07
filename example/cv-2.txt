@@ -1,5 +1,17 @@
-Ulice -- String; (numuze byt prazdne)
-Cislo -- number; (muze byt prazdne)
-Mesto -- String; BP: Mesto musi byt na vyber s existujicich v nase databaze
-PSC -- Number; (musi mit 6 cisel)
+Ulice -- diskrétní
+T.P: String (nemůže byt prázdné); 
+B.P Ulice musi existovat
 
+
+Číslo -- intervalní
+T.P: Number; (muže byt prázdné)
+B.P: Číslo musí patřit do intervalu od 0 do poctu existujících 
+
+
+Město -- diskrétní
+T.P: String; 
+B.P: Město musí byt na vyber s existujících v naše databáze
+
+PSC -- interval
+T.P: Number; (musí mít 6 Čísel)
+B.P: Číslo musí patřit do intervalu existujících PSC
