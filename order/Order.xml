@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="Order">
+  <Parameters>
+    <Parameter id="0" name="Registration" type="2">
+      <values>
+        <value>true</value>
+        <value>false</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="2" name="Name" type="1">
+      <values>
+        <value>NULL</value>
+        <value>@$&amp;%</value>
+        <value>Alina</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="3" name="Destination" type="1">
+      <values>
+        <value>Poland</value>
+        <value>Norway</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="4" name="DateOfBirthsday" type="1">
+      <values>
+        <value>12.04.2004</value>
+        <value>04/12/2004</value>
+        <value>2004-04-12</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+    <Parameter id="5" name="Sale" type="1">
+      <values>
+        <value>Student</value>
+        <value>Elderly</value>
+        <value>Voucher</value>
+      </values>
+      <basechoices />
+      <invalidValues />
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints />
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>false</Value>
+      <Value>NULL</Value>
+      <Value>Norway</Value>
+      <Value>12.04.2004</Value>
+      <Value>Elderly</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>true</Value>
+      <Value>NULL</Value>
+      <Value>Poland</Value>
+      <Value>04/12/2004</Value>
+      <Value>Voucher</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>false</Value>
+      <Value>NULL</Value>
+      <Value>Poland</Value>
+      <Value>2004-04-12</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>true</Value>
+      <Value>@$&amp;%</Value>
+      <Value>Norway</Value>
+      <Value>12.04.2004</Value>
+      <Value>Voucher</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>false</Value>
+      <Value>@$&amp;%</Value>
+      <Value>Norway</Value>
+      <Value>04/12/2004</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>true</Value>
+      <Value>@$&amp;%</Value>
+      <Value>Poland</Value>
+      <Value>2004-04-12</Value>
+      <Value>Elderly</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>true</Value>
+      <Value>Alina</Value>
+      <Value>Poland</Value>
+      <Value>12.04.2004</Value>
+      <Value>Student</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>false</Value>
+      <Value>Alina</Value>
+      <Value>Norway</Value>
+      <Value>04/12/2004</Value>
+      <Value>Elderly</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>false</Value>
+      <Value>Alina</Value>
+      <Value>Norway</Value>
+      <Value>2004-04-12</Value>
+      <Value>Voucher</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>Registration</Value>
+    <Value>Name</Value>
+    <Value>Destination</Value>
+    <Value>DateOfBirthsday</Value>
+    <Value>Sale</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.034</ExecutionTime>
+    <MaxDomainSize>3</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>67</TotalNoOfCombination>
+    <TotalNoOfTests>9</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
